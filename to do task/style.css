@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(196, 134, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.todo-app{
+    margin: 30px;
+    font-size: 30px;
+    width: 100%;
+}
+.todo-app img{
+    width: 60px;
+    height: 50px;
+    
+}
+
+input{
+    /* width: 100%; */
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 8px;
+
+}
+button{
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: brown;
+    border: none;
+    color:antiquewhite;
+    border-radius: 10px;
+}
+#list-container li{
+    font-size: 18px;
+    margin: 20px;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("images/unchecked.png");
+    background-position: center;
+    top: 12px;
+
+}
